@@ -48,14 +48,29 @@ button {
   border-radius: 10px;
   border: 3px solid rgb(58, 58, 90);
 }
-.operatorColor {
+.operatorPlus,
+.operatorMinus,
+.operatorMultiply,
+.operatorDivide {
   background-color: rgb(212, 100, 60);
 }
-.numberButton {
+.number7,
+.number8,
+.number9,
+.number4,
+.number5,
+.number6,
+.number1,
+.number2,
+.number3,
+.number0,
+.numberdot {
   background-color: rgb(119, 118, 118);
 }
 .equalOperator {
   background-color: rgb(39, 155, 39);
+  grid-row: 2/6;
+  grid-column: 4/4;
 }
 .cancelButton {
   background-color: rgb(243, 54, 54);
@@ -66,7 +81,7 @@ button {
   gap: 15px;
   padding: 10px;
 }
-#equalButton {
-  grid-row: 2/6;
-  grid-column: 4/4;
+
+#display {
+  text-align: right;
 }
