@@ -1,0 +1,72 @@
+body {
+  background-color: rgb(41, 41, 78);
+}
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  border: 5px solid rgb(58, 58, 90);
+  padding: 10px;
+  background-color: rgb(175, 173, 173);
+  border-radius: 10px;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: rgb(41, 41, 78);
+  text-align: center;
+  padding: 0 auto;
+  margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  text-align: right;
+  -moz-appearance: textfield; /* Firefox */
+}
+input {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 500px;
+  height: 50px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: xx-large;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
+  border: grey;
+}
+button {
+  padding: 15px 20px;
+  font-size: xx-large;
+  border-radius: 10px;
+  border: 3px solid rgb(58, 58, 90);
+}
+.operatorColor {
+  background-color: rgb(212, 100, 60);
+}
+.numberButton {
+  background-color: rgb(119, 118, 118);
+}
+.equalOperator {
+  background-color: rgb(39, 155, 39);
+}
+.cancelButton {
+  background-color: rgb(243, 54, 54);
+}
+.calculatorFrame {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+  padding: 10px;
+}
+#equalButton {
+  grid-row: 2/6;
+  grid-column: 4/4;
+}
