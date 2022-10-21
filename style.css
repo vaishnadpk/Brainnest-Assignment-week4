@@ -17,16 +17,8 @@ p {
   padding: 0 auto;
   margin: 0;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
 input[type="number"] {
   text-align: right;
-  -moz-appearance: textfield; /* Firefox */
 }
 input {
   display: flex;
@@ -48,23 +40,10 @@ button {
   border-radius: 10px;
   border: 3px solid rgb(58, 58, 90);
 }
-.operatorPlus,
-.operatorMinus,
-.operatorMultiply,
-.operatorDivide {
+.operator {
   background-color: rgb(212, 100, 60);
 }
-.number7,
-.number8,
-.number9,
-.number4,
-.number5,
-.number6,
-.number1,
-.number2,
-.number3,
-.number0,
-.numberdot {
+.number {
   background-color: rgb(119, 118, 118);
 }
 .equalOperator {

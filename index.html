@@ -12,38 +12,34 @@
     <div class="container">
       <p>eCalculator</p>
 
-      <input type="text" placeholder="0." id="display" />
+      <input type="text" placeholder="0" id="display" disabled />
       <div class="calculatorFrame">
-        <button type="submit" class="operatorPlus" onclick="setOperator('+')">
+        <button type="submit" class="operator" onclick="setOperator('+')">
           +
         </button>
-        <button type="submit" class="operatorMinus" onclick="setOperator('-')">
+        <button type="submit" class="operator" onclick="setOperator('-')">
           -
         </button>
-        <button
-          type="submit"
-          class="operatorMultiply"
-          onclick="setOperator('*')"
-        >
+        <button type="submit" class="operator" onclick="setOperator('*')">
           *
         </button>
-        <button type="submit" class="operatorDivide" onclick="setOperator('/')">
+        <button type="submit" class="operator" onclick="setOperator('/')">
           /
         </button>
-        <button type="submit" class="number7" onclick="setDisplay(7)">7</button>
-        <button type="submit" class="number8" onclick="setDisplay(8)">8</button>
-        <button type="submit" class="number9" onclick="setDisplay(9)">9</button>
+        <button type="submit" class="number" onclick="setDisplay(7)">7</button>
+        <button type="submit" class="number" onclick="setDisplay(8)">8</button>
+        <button type="submit" class="number" onclick="setDisplay(9)">9</button>
         <button type="submit" class="equalOperator" onclick="calculate()">
           =
         </button>
-        <button type="submit" class="number4" onclick="setDisplay(4)">4</button>
-        <button type="submit" class="number5" onclick="setDisplay(5)">5</button>
-        <button type="submit" class="number6" onclick="setDisplay(6)">6</button>
-        <button type="submit" class="number1" onclick="setDisplay(1)">1</button>
-        <button type="submit" class="number2" onclick="setDisplay(2)">2</button>
-        <button type="submit" class="number3" onclick="setDisplay(3)">3</button>
-        <button type="submit" class="number0" onclick="setDisplay(0)">0</button>
-        <button type="submit" class="numberdot" onclick="setDisplay('.')">
+        <button type="submit" class="number" onclick="setDisplay(4)">4</button>
+        <button type="submit" class="number" onclick="setDisplay(5)">5</button>
+        <button type="submit" class="number" onclick="setDisplay(6)">6</button>
+        <button type="submit" class="number" onclick="setDisplay(1)">1</button>
+        <button type="submit" class="number" onclick="setDisplay(2)">2</button>
+        <button type="submit" class="number" onclick="setDisplay(3)">3</button>
+        <button type="submit" class="number" onclick="setDisplay(0)">0</button>
+        <button type="submit" class="number" onclick="setDisplay('.')">
           .
         </button>
         <button type="submit" class="cancelButton" onclick="clearAll()">
