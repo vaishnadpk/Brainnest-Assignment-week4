@@ -9,7 +9,7 @@ function setOperator(opValue) {
   operator = opValue;
   previousValue = getDisplayValue();
   setDisplayValue("");
-  document.querySelector("#display").placeholder = previousValue;
+  document.querySelector("#display").placeholder = previousValue || 0;
 }
 
 //function for appending the values
@@ -20,6 +20,9 @@ function setDisplay(value) {
   }
   if (value === "." && disValue.includes(".")) {
     return;
+  }
+  if (operator !== "" && previousValue === "") {
+    disValue = operator;
   }
 
   setDisplayValue(`${disValue}${value}`);
@@ -52,6 +55,9 @@ function calculate() {
   }
 
   setDisplayValue(result);
+  operator = "";
+  document.querySelector("#display").placeholder = result;
+  previousValue = value;
 }
 
 //function to get the value of input
