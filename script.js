@@ -3,6 +3,9 @@ let operator = "";
 
 //function to set the operator
 function setOperator(opValue) {
+  if (operator !== "" && previousValue !== "") {
+    calculate();
+  }
   operator = opValue;
   previousValue = getDisplayValue();
   setDisplayValue("");
