@@ -21,7 +21,7 @@ function setDisplay(value) {
   if (value === "." && disValue.includes(".")) {
     return;
   }
-  if (operator !== "" && previousValue === "") {
+  if (operator === "-" && previousValue === "") {
     disValue = operator;
   }
 
